@@ -1,0 +1,14 @@
+# https://code.visualstudio.com/docs/cpp/config-mingw
+
+printf("Shows you all the steps necessary")
+
+1. Get the C/C++ extension in the VSC extension tab.
+2. Download Mingw-w64:
+   2-1. Install MSYS2 -> https://www.msys2.org/
+   2-2. On the MSYS prog. execute: "pacman -S --needed base-devel mingw-w64-x86_64-toolchain"
+3. Windows+R -> sysdm.cpl -> Advanced -> Edit Environment Variables -> In the upper path add the location of your installed Mingw's bin folder.
+4. Check if finished by typing gcc --version in your cmd.
+5. Make a new folder and a new file with a .c name
+6. Go into Run&Debug tab and make a launch.json file
+7. Select g++.exe build and debug in the upper dropdown menu.
+8. Good to go :)
